@@ -1,0 +1,112 @@
+// banner
+nav.w3-navbar
+  .container
+    .nav-top
+      // Logo
+      .logo
+        a.scroll(href='#home')
+          | Professional 
+          span CV
+      // Logo
+      .right
+        .w3-socials
+          ul
+            li
+              a(href='#')
+                span.fa.fa-facebook
+            li
+              a(href='#')
+                span.fa.fa-vk
+            li
+              a(href='#')
+                span.fa.fa-pinterest-p
+            li
+              a(href='#')
+                span.fa.fa-twitter
+        .clearfix
+  // end container
+.w3l-banner
+  .wthree-dot
+    // nav
+    .w3layouts-nav-right
+      .fat-nav
+        .fat-nav__wrapper
+          ul
+            li
+              a(href='') Home
+            li
+              a.scroll(href='') About Me
+            li
+              a.scroll(href='#services') My Services
+            li
+              a.scroll(href='#skills') My Skills
+            li
+              a.scroll(href='#gallery') My projects
+            li
+              a.scroll(href='#stats') Stats
+            li
+              a.scroll(href='#experience') Work Experience
+            li
+              a.scroll(href='#contact') Contact
+    // //nav
+#sgedi-touch-slider.carousel.bs-slider.slide.control-round.indicators-line(data-ride='carousel', data-pause='hover', data-interval='5000')
+  // Indicators
+  ol.carousel-indicators
+    li.active(data-target='#sgedi-touch-slider', data-slide-to='0')
+    li(data-target='#sgedi-touch-slider', data-slide-to='1')
+    li(data-target='#sgedi-touch-slider', data-slide-to='2')
+  // Wrapper For Slides
+  .carousel-inner(role='listbox')
+    // Third Slide
+    .item.active
+      // Slide Background
+      img.slide-image(src='https://images.pexels.com/photos/136320/pexels-photo-136320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', alt='')
+      .bs-slider-overlay
+      .container
+        .row
+          // Slide Text Layer
+          .slide-text.slide_style_left
+            h1(data-animation='animated zoomInRight')
+              span Your Documents In The Best Hands.
+            p(data-animation='animated fadeInLeft') SGDI Guarantees The Security Of Your Information.
+            //
+              a href="" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+              <a href="" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">select two</a
+    // End of Slide
+    // Second Slide
+    .item
+      // Slide Background
+      img.slide-image(src='https://images.pexels.com/photos/34088/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', alt='')
+      .bs-slider-overlay
+      // Slide Text Layer
+      .slide-text.slide_style_center
+        h1(data-animation='animated flipInX')
+          span Intelligent, Easy And Fast Documentary Management.
+        p(data-animation='animated lightSpeedIn') Transform Your Document Management.
+        //
+          a href="" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">select one</a>
+          <a href="" target="_blank" class="btn btn-primary" data-animation="animated fadeInDown">select two</a
+    // End of Slide
+    // Third Slide
+    .item
+      // Slide Background
+      img.slide-image(src='https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', alt='')
+      .bs-slider-overlay
+      // Slide Text Layer
+      .slide-text.slide_style_right
+        h1(data-animation='animated zoomInLeft')
+          span Online Documentary Management for Real Life
+        p(data-animation='animated fadeInRight') The smartest way to work with documents.
+        //
+          a href="" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+          <a href="" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">select two</a
+    // End of Slide
+  // End of Wrapper For Slides
+  // Left Control
+  a.left.carousel-control(href='#sgedi-touch-slider', role='button', data-slide='prev')
+    span.fa.fa-angle-left(aria-hidden='true')
+    span.sr-only Previous
+  // Right Control
+  a.right.carousel-control(href='#sgedi-touch-slider', role='button', data-slide='next')
+    span.fa.fa-angle-right(aria-hidden='true')
+    span.sr-only Next

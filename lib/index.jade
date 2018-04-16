@@ -1,0 +1,88 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title PROFESSIONAL CV
+
+        // Custom Css files
+        link(rel="stylesheet", href="public/css/app.css")
+        link(rel="stylesheet", href="public/css/bootstrap.min.css" type="text/css" media="all")
+        link(rel='stylesheet', href='public/font-awesome-4.7.0/css/font-awesome.min.css')
+        // //End Custom css files
+
+        // Menu
+        link(type='text/css', rel='stylesheet', href='public/css/cm-overlay.css')
+        link(href='public/css/jquery.fatNav.css', rel='stylesheet', type='text/css')
+        // //End Menu
+        
+        // Flexslider
+        link(rel="stylesheet", href="public/css/flexslider.css" type="text/css" media="screen")
+        // //End Flexslider
+    body
+        include ./navbar/template
+        include ./about/template
+        include ./service/template
+        include ./skill/template
+        include ./stast/template
+        include ./experience/template
+        include ./footer/template
+
+        // Default JavaScript File
+        script(type='text/javascript', src='js/jquery-2.1.4.min.js')
+        script(type='text/javascript', src='js/bootstrap.min.js')
+        // //End Default JavaScript File
+
+
+        // gauge-meter
+        script(src="js/jquery.gauge.js")
+        script.
+            $(document).ready(function (){
+            $("#gauge1").gauge(90,{color: "#ff4f81",unit: " %",type: "halfcircle"});
+            $("#gauge2").gauge(70, {color: "#2dde98", unit: " %",type: "halfcircle"});
+            $("#gauge3").gauge(75, {color: "#00aeff",unit: " %",type: "halfcircle"});
+            $("#gauge4").gauge(40, {color: "#ffb900",unit: " %",type: "halfcircle"});
+            });
+        // //End gauge-meter
+
+        // Star Menu-script
+        script(type='text/javascript', src='js/modernizr-2.6.2.min.js')
+        script(src='js/jquery.fatNav.js')
+        script.
+            (function() {
+            $.fatNav();
+            }());
+
+        // //End Menu-script
+
+        // Star-Slider-Script
+        script(defer='', src='js/jquery.flexslider.js')
+        script(type='text/javascript').
+            $(window).load(function(){
+            $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider){
+            $('body').removeClass('loading');
+            }
+            });
+            });
+        // //End-slider-script
+
+        // smooth scrolling
+        script(src='js/SmoothScroll.min.js')
+        // //smooth scrolling
+
+        script(type='text/javascript').
+            jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+            });
+
+        // Script to Activate the Carousel
+        script.
+            $('.carousel').carousel({
+            interval: 5000 //changes the speed
+            })
+
